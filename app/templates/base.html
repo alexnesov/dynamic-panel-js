@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body style="background-color: #f5f6f8;">
+    <div class="container-fluid">
+      {% block body %}
+      {% endblock %}
+    </div> <!-- /container -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}" ></script>
+    <script src="{{ url_for('static', filename='js/mdb.min.js') }}" ></script>
+    <script src="{{ url_for('static', filename='js/Chart.js') }}" ></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}" ></script>
+  </body>
+</html>

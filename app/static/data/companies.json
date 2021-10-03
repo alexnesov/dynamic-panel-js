@@ -1,0 +1,102 @@
+{
+    "companies_data":[{
+        "name":"Central Garden & Pet Company",
+        "tick":"CENTA",
+        "price":43,
+        "sector":"Consumer Defensive",
+        "industry":"Packaged Foods",
+        "years_data":{
+            "2016":{
+                "Revenues":1829,
+                "Gross Profit":53.1,
+                "Operating Income": 128.8,
+                "Net Income to Company": 45.6,
+                "Revenue Per Share": 37.35,
+                "EBITDA":168.8
+            },
+            "2017":{
+                "Revenues":2054.5,
+                "Gross Profit":632.8,
+                "Operating Income":156.1,
+                "Net Income to Company":79.7,
+                "Revenue Per Share":40.90,
+                "EBITDA":198.8
+            },
+            "2018":{
+                "Revenues":2215.4,
+                "Gross Profit":675.4,
+                "Operating Income":167.3,
+                "Net Income to Company":124.1,
+                "Revenue Per Share":42.84,
+                "EBITDA":214.5
+            },
+            "2019":{
+                "Revenues":2383,
+                "Gross Profit":704,
+                "Operating Income":154.6,
+                "Net Income to Company":92.6,
+                "Revenue Per Share": 41.98,
+                "EBITDA": 205.4
+            },
+            "2020":{
+                "Revenues":2695.5,
+                "Gross Profit":796.6,
+                "Operating Income":198,
+                "Net Income to Company":121.5,
+                "Revenue Per Share": 49.91,
+                "EBITDA":253.3
+            }
+        }
+    },
+
+    {
+        "name":"Science Applications International Corporation",
+        "tick":"SAIC",
+        "price":86.65,
+        "sector":"Technology",
+        "industry":"Information Technology Services",
+        "years_data":{
+            "2016":{
+                "Revenues":4442,
+                "Gross Profit":439,
+                "Operating Income":273,
+                "Net Income to Company":143,
+                "Revenue Per Share":99.82,
+                "EBITDA":326
+            },
+            "2017":{
+                "Revenues":4454,
+                "Gross Profit":411,
+                "Operating Income":256,
+                "Net Income to Company":179,
+                "Revenue Per Share":102.86,
+                "EBITDA":301
+            },
+            "2018":{
+                "Revenues":4659,
+                "Gross Profit":464,
+                "Operating Income":306,
+                "Net Income to Company":137,
+                "Revenue Per Share":107.35,
+                "EBITDA":353
+            },
+            "2019":{
+                "Revenues":6379,
+                "Gross Profit":706,
+                "Operating Income":418,
+                "Net Income to Company":229,
+                "Revenue Per Share":109.23,
+                "EBITDA":549
+            },
+            "2020":{
+                "Revenues":7056,
+                "Gross Profit":792,
+                "Operating Income":450,
+                "Net Income to Company":211,
+                "Revenue Per Share":121.45,
+                "EBITDA":607
+            }
+        }
+    }]
+
+}

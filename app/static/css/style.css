@@ -1,0 +1,59 @@
+
+.card{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+td {
+    position: relative;
+    padding: 1.2rem 1.8rem;
+}
+
+tr:hover,
+tr:focus-within {
+    background: #007cb0;
+    color: #fff;
+    outline: none;
+}
+
+thead tr:hover,
+thead tr:focus-within {
+    color: #000000;
+}
+
+#companyTableRight thead tr:hover,
+#companyTableRight thead tr:focus-within {
+    color: #fff;
+}
+
+
+#companyTableRight tbody tr:hover,
+#companyTableRight tbody tr:focus-within {
+    background: #fff;
+    color: #000000;
+}
+
+td > .row-link {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    text-decoration: none;
+    color: inherit;
+}
+td > .row-link:focus {
+    outline: 0;
+}
+
+td > a:not(.row-link) {
+    position: relative;
+    z-index: 1;
+}
+  

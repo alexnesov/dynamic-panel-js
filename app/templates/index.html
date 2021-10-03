@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Companies</h5>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-responsive">
+              <thead>
+                <tr class="table-primary">
+                  <th scope="col">ID</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for company in companies_data %}
+                  {% for year in company.years %}
+                    <tr>
+                      <td scope="row"><a href="#" class="row-link" data-tick="{{ company.tick }}" data-year="{{ year }}" data-name="{{ company.name }}" data-industry="{{ company.industry }}" data-sector="{{ company.sector }}" data-price="{{ company.price }}">{{ company.tick }}</a></td>
+                      <td><a href="#" class="row-link" data-tick="{{ company.tick }}" data-year="{{ year }}" data-name="{{ company.name }}" data-industry="{{ company.industry }}" data-sector="{{ company.sector }}" data-price="{{ company.price }}">{{ company.price }}</a></td>
+                      <td><a href="#" class="row-link" data-tick="{{ company.tick }}" data-year="{{ year }}" data-name="{{ company.name }}" data-industry="{{ company.industry }}" data-sector="{{ company.sector }}" data-price="{{ company.price }}">{{ year }}</a></td>
+                    </tr>
+                  {% endfor %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Companies</h5>
+        <div class="row">
+          <div class="col-md-7">
+            <table class="table table-responsive table-bordered border-dark" id="companyTableRight">
+              <thead>
+                <tr class="table-dark">
+                  <th scope="col">Name</th>
+                  <th scope="col">Tick</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Sector</th>
+                  <th scope="col">Industry</th>
+                  <th scope="col">Year</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-5" align="center">
+            <canvas id="companyPiChart"></canvas>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <canvas id="companyBarChart"></canvas>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
